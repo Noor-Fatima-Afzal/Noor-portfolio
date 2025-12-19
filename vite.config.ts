@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Replace 'Noor-Fatima' with your repo name if different
 export default defineConfig(({ mode }) => ({
-  base: "/Noor-Fatima/", // <-- add this line for GitHub Pages
+  base: "/Noor-portfolio/", // <-- your GitHub repo name
   server: {
     host: "::",
     port: 8080,
