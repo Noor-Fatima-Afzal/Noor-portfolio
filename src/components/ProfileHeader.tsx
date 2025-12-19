@@ -52,7 +52,7 @@ const ProfileHeader = ({ name, phone, email, profileImage, bio }: ProfileHeaderP
           <img
             src={profileImage}
             alt={`${name} profile`}
-            className="w-40 h-48 object-cover rounded-sm border border-border"
+            className="w-40 h-40 object-cover rounded-full border border-border"
           />
         </div>
       </div>

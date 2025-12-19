@@ -20,14 +20,19 @@ const Index = () => {
   };
 
   const education = [
-    {
-      institution: "University of Engineering and Technology (UET) Lahore, Pakistan",
-      location: "Lahore, Pakistan",
-      period: "Sept 2023 - Present",
-      degree: "BS, Computer Engineering",
-      advisor: { name: "Prof. Dr. Muhammad Shahhbaz", url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" },
-      // links: [{ label: "Proposal", url: "#" }],
-    },
+{
+  institution: "University of Engineering and Technology (UET) Lahore, Pakistan",
+  location: "Lahore, Pakistan",
+  period: "Sept 2023 - Present",
+  degree: "BS, Computer Engineering",
+  cgpa: "3.79 / 4",  // added CGPA here
+  advisor: { 
+    name: "Prof. Dr. Muhammad Shahhbaz", 
+    url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" 
+  },
+  // links: [{ label: "Proposal", url: "#" }],
+},
+
     {
       institution: "Punjab Group of Colleges, Wazirabad Campus, Pakistan",
       location: "Wazirabad, Pakistan",
@@ -71,38 +76,68 @@ const Index = () => {
     },
   ];
 
-  const projects = [
-    {
-      title: "FlashAttention: Fast and Memory-Efficient Attention",
-      description: "Developed a novel IO-aware algorithm for computing exact attention with sub-quadratic memory complexity. This enables training of longer context transformers and reduces GPU memory usage by up to 10x while achieving 2-4x speedup.",
-      techStack: ["PyTorch", "CUDA", "Triton", "C++"],
-      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop",
-      links: [
-        { label: "Paper", url: "#" },
-        { label: "Code", url: "#" },
-      ],
-    },
-    {
-      title: "Vision Transformer Scaling Study",
-      description: "Conducted comprehensive study on scaling vision transformers to 22 billion parameters. Investigated training stability, emergent capabilities, and transfer learning efficiency at unprecedented scales.",
-      techStack: ["JAX", "TPU", "TensorFlow"],
-      imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop",
-      links: [
-        { label: "Paper", url: "#" },
-        { label: "Demo", url: "#" },
-      ],
-    },
-    {
-      title: "Constitutional AI Framework",
-      description: "Built a framework for training AI systems using principles from human feedback and constitutional constraints. Achieved significant improvements in harmlessness while maintaining helpfulness.",
-      techStack: ["Python", "PyTorch", "Anthropic Claude"],
-      imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=200&fit=crop",
-      links: [
-        { label: "Paper", url: "#" },
-        { label: "ArXiv", url: "#" },
-      ],
-    },
-  ];
+  // const projects = [
+  // {
+  //   title: "Physics-Informed Neural Network for Solar Irradiance Forecasting",
+  //   description: "Accurately forecast Global Horizontal Irradiance (GHI) for renewable energy systems while ensuring physical consistency. Integrates solar physics knowledge, PDE residuals, and monotonicity priors for improved robustness and interpretability, achieving R2 = 0.989.",
+  //   techStack: ["Python", "TensorFlow", "PDE Modeling", "Physics-Informed NN"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "Teeth Segmentation & 3D Volume Rendering",
+  //   description: "Automatic segmentation of dental DICOM volumes into enamel, root, and nerve. Uses U-Net–based 2D slice segmentation, morphological post-processing, and marching cubes 3D reconstruction, achieving 99.8% mean segmentation accuracy.",
+  //   techStack: ["Python", "PyTorch", "U-Net", "3D Visualization"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "Cognitive & Energy-Efficient Sleep Stage Classification",
+  //   description: "Classify sleep stages using spiking neural networks (SNNs) on EEG. Leverages event-driven neuromorphic processing to capture spatiotemporal brain dynamics efficiently while reducing energy consumption.",
+  //   techStack: ["Python", "TensorFlow", "snnTorch", "MNE"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "TriNet-MTL: Multitask Learning on Auditory-Evoked EEG",
+  //   description: "Jointly classify identity, stimulus language, and device modality from auditory-evoked EEG. Transformer-based shared temporal encoder with three task-specific heads. Achieved 91%+ accuracy for biometric ID with strong generalization.",
+  //   techStack: ["Python", "PyTorch", "Transformers", "EEG Analysis"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "Real-time Seizure Detection, Classification & Forecasting",
+  //   description: "Real-time EEG-based seizure analysis using graph representation of channels and connectivity. Multi-head GNN predicts detection, classification, onset-time, and type simultaneously, enabling high-accuracy, low-latency inference.",
+  //   techStack: ["Python", "PyTorch Geometric", "GNN", "EEG"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "Emotion Classification via EEG Signals",
+  //   description: "Classifies human emotions from EEG using hybrid ResNet50 + Transformer model. Features include PSD and Differential Entropy. Achieved 92% accuracy on SEED-IV and 91% on DEAP datasets through late feature fusion.",
+  //   techStack: ["Python", "PyTorch", "ResNet50", "Transformer", "EEG Processing"],
+  //   imageUrl: "https://images.unsplash.com/photo-placeholder?w=400&h=200&fit=crop",
+  //   links: [
+  //     { label: "Paper", url: "#" },
+  //     { label: "Code", url: "#" },
+  //   ],
+  // },
+  // ];
 
   const awards = [
     {
@@ -134,23 +169,25 @@ const Index = () => {
     },
   ];
 
-  const talks = [
-    {
-      venue: "NeurIPS 2023, New Orleans",
-      title: "Efficient Attention Mechanisms for Long-Range Dependencies",
-      slidesUrl: "#",
-    },
-    {
-      venue: "ICML 2023, Hawaii",
-      title: "Self-Supervised Learning for Multimodal Representations",
-      slidesUrl: "#",
-    },
-    {
-      venue: "Google Research Summit, Mountain View",
-      title: "Scaling Language Models: Challenges and Opportunities",
-      slidesUrl: "#",
-    },
-  ];
+const talks = [
+  {
+    venue: "ACM UET Lahore Chapter",
+    title: "AI for Brain: Unlocking Cognitive Insights with Machine Learning",
+    talkUrl: "https://drive.google.com/file/d/1x-XxH2F6zp6eiB1ZZIAA0W6Wj9osQ92B/view?usp=sharing",
+    slidesUrl: "https://drive.google.com/file/d/12wXUE5LoYlQrvojvIz3sapi8Toq3hUma/view?usp=sharing",
+    date: "August 2025",
+    description: "Engaged 100+ students, and faculty in exploring machine learning applications for cognitive neuroscience.",
+  },
+  {
+    venue: "Google Developer Group (GDG), UET Lahore",
+    title: "Data-Centric AI: Why Better Data Beats Bigger Models",
+    talkUrl: "https://drive.google.com/file/d/1tVBMx9-RuZW2ef1Jg25rRkIN5KVN_SLD/view?usp=sharing",
+    slidesUrl: "https://drive.google.com/file/d/1Xv78iuJI_uL5iHWqCWausF7ARxtfW2oH/view?usp=sharing",
+    date: "August 2025",
+    description: "Addressed 50+ AI enthusiasts and students, emphasizing how high-quality datasets drive real-world AI success.",
+  },
+];
+
 
   const skills = [
     {
@@ -195,11 +232,11 @@ const Index = () => {
         ))}
       </Section>
 
-      <Section title="Awards" id="awards">
+      {/* <Section title="Awards" id="awards">
         {awards.map((award, index) => (
           <AwardItem key={index} {...award} />
         ))}
-      </Section>
+      </Section> */}
 
       <Section title="Academic Talks" id="talks">
         {talks.map((talk, index) => (
@@ -207,11 +244,11 @@ const Index = () => {
         ))}
       </Section>
 
-      <Section title="Projects" id="projects">
+      {/* <Section title="Projects" id="projects">
         {projects.map((project, index) => (
           <ProjectItem key={index} {...project} />
         ))}
-      </Section>
+      </Section> */}
 
       <Section title="Technical Skills" id="skills">
         <SkillsSection skillCategories={skills} />

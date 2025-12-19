@@ -4,6 +4,7 @@ interface EducationItemProps {
   period: string;
   degree: string;
   thesis?: string;
+  cgpa?: string; // make it optional
   advisor?: { name: string; url?: string };
   links?: { label: string; url: string }[];
 }
@@ -14,6 +15,7 @@ const EducationItem = ({
   period,
   degree,
   thesis,
+  cgpa,
   advisor,
   links,
 }: EducationItemProps) => {
