@@ -16,11 +16,20 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
+      {/* Use HashRouter for GitHub Pages */}
       <HashRouter>
         <Routes>
+          {/* Home page */}
           <Route path="/" element={<Index />} />
+
+          {/* Awards page */}
           <Route path="/awards" element={<Awards />} />
+
+          {/* Projects page */}
           <Route path="/projects" element={<Projects />} />
+
+          {/* 404 fallback */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
