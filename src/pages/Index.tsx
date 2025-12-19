@@ -8,74 +8,66 @@ import TalkItem from "@/components/TalkItem";
 import ProjectItem from "@/components/ProjectItem";
 import AwardItem from "@/components/AwardItem";
 import SkillsSection from "@/components/SkillsSection";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Index = () => {
   const profileData = {
-    name: "Dr. Alex Chen",
-    phone: "+1 (555) 123-4567",
-    email: "alex.chen@university.edu",
+    name: "Noor Fatima",
+    phone: "+92 327 2734825",
+    email: "noorfatimaafzalbutt@gmail.com",
     profileImage: profilePhoto,
-    bio: "I am a passionate researcher currently pursuing my Ph.D. at Stanford University, California. My interests lie in the areas of Deep Learning, Machine Learning, Natural Language Processing, Computer Vision, and Artificial Intelligence.",
+    bio: "I am a motivated undergraduate researcher pursuing a BS in Computer Engineering at the University of Engineering and Technology (UET), Lahore. My research interests span Machine Learning, Deep Learning, EEG signal processing, Quantum Machine Learning, and Medical AI, with a strong focus on building data-driven, efficient, and clinically relevant intelligent systems.",
   };
 
   const education = [
     {
-      institution: "Stanford University",
-      location: "Stanford, CA, USA",
-      period: "Sept 2021 - Present",
-      degree: "Ph.D., Computer Science",
-      advisor: { name: "Dr. Andrew Ng", url: "https://scholar.google.com" },
-      links: [{ label: "Proposal", url: "#" }],
+      institution: "University of Engineering and Technology (UET) Lahore, Pakistan",
+      location: "Lahore, Pakistan",
+      period: "Sept 2023 - Present",
+      degree: "BS, Computer Engineering",
+      advisor: { name: "Prof. Dr. Muhammad Shahhbaz", url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" },
+      // links: [{ label: "Proposal", url: "#" }],
     },
     {
-      institution: "MIT",
-      location: "Cambridge, MA, USA",
-      period: "Sept 2019 - June 2021",
-      degree: "MS, Computer Science",
-      thesis: "Attention Mechanisms in Vision Transformers",
-      advisor: { name: "Dr. Regina Barzilay", url: "https://scholar.google.com" },
-      links: [{ label: "PDF", url: "#" }],
-    },
-    {
-      institution: "UC Berkeley",
-      location: "Berkeley, CA, USA",
-      period: "Aug 2015 - May 2019",
-      degree: "BS, Computer Science & Mathematics",
-      advisor: { name: "Dr. Stuart Russell", url: "https://scholar.google.com" },
-    },
+      institution: "Punjab Group of Colleges, Wazirabad Campus, Pakistan",
+      location: "Wazirabad, Pakistan",
+      period: "Sept 2021 - June 2023",
+      degree: "FSc. Pre-Engineering",
+      subjects: "Mathematics, Physics, Chemistry",
+      honour: [{ label: "PDF", url: "#" }],
+    },  
   ];
 
   const researchExperience = [
     {
-      institution: "Stanford University",
-      location: "Stanford, CA, USA",
-      period: "Sept 2021 - Present",
-      role: "Graduate Research Assistant",
-      advisor: { name: "Dr. Andrew Ng", url: "https://scholar.google.com" },
+      institution: "Alkhawarizmi Institute of Computer Science (KICS)",
+      location: "Lahore, Pakistan",
+      period: "June 2024 - Present",
+      role: "Research Assistant",
+      advisor: { name: "Prof. Dr. Muhammad Shahhbaz", url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" },
     },
     {
-      institution: "Google DeepMind",
-      location: "London, UK",
-      period: "June 2023 - Sept 2023",
+      institution: "National Center for Quantum Computing (NCQC)",
+      location: "Lahore, Pakistan",
+      period: "May 2025 - Sept 2025",
       role: "Research Intern",
-      advisor: { name: "Dr. Demis Hassabis", url: "https://scholar.google.com" },
-      links: [{ label: "Paper", url: "#" }],
+      advisor: { name: "Prof. Dr. Muhammad Shahhbaz", url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" },
+      links: [{ label: "Paper", url: "https://scholar.google.com/citations?user=WRKxdKYAAAAJ&hl=en" }],
     },
     {
-      institution: "Meta AI Research",
-      location: "Menlo Park, CA, USA",
-      period: "May 2022 - Aug 2022",
-      role: "Research Intern",
-      advisor: { name: "Dr. Yann LeCun", url: "https://scholar.google.com" },
+      institution: "Datalabb AI Research and Development",
+      location: "Lahore, Pakistan",
+      period: "March 2024 - June 2024",
+      role: "Machine Learning Intern",
+      advisor: { name: "Prof. Dr. Muhammad Shahhbaz", url: "https://scholar.google.com/citations?user=rQk-wHAAAAAJ&hl=en" },
     },
     {
-      institution: "Microsoft Research",
-      location: "Redmond, WA, USA",
-      period: "June 2020 - Aug 2020",
-      role: "Research Intern",
-      advisor: { name: "Dr. Eric Horvitz", url: "https://scholar.google.com" },
-      links: [{ label: "Patent", url: "#" }],
+      institution: "Bytewise Limited",
+      location: "Remote",
+      period: "Jun 2024 – Sep 2024",
+      role: "Machine Learning Fellowship",
+      // advisor: { name: "Dr. Eric Horvitz", url: "https://scholar.google.com" },
+      // links: [{ label: "Patent", url: "#" }],
     },
   ];
 

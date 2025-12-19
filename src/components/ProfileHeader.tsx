@@ -10,11 +10,11 @@ interface ProfileHeaderProps {
 
 const ProfileHeader = ({ name, phone, email, profileImage, bio }: ProfileHeaderProps) => {
   const socialLinks = [
-    { href: "https://scholar.google.com", icon: "scholar" as const, label: "Google Scholar" },
-    { href: "https://linkedin.com", icon: "linkedin" as const, label: "LinkedIn" },
-    { href: "https://github.com", icon: "github" as const, label: "GitHub" },
-    { href: "https://twitter.com", icon: "twitter" as const, label: "X (Twitter)" },
-    { href: "https://facebook.com", icon: "facebook" as const, label: "Facebook" },
+    { href: "https://scholar.google.com/citations?user=WRKxdKYAAAAJ&hl=en", icon: "scholar" as const, label: "Google Scholar" },
+    { href: "https://www.linkedin.com/in/noor-fatima-afzal", icon: "linkedin" as const, label: "LinkedIn" },
+    { href: "https://github.com/Noor-Fatima-Afzal", icon: "github" as const, label: "GitHub" },
+    { href: "https://x.com/NoorFatimaAfzal?t=TqARvJq1l1U_M9A6ZBRD0g&s=09", icon: "twitter" as const, label: "X (Twitter)" },
+    { href: "https://www.facebook.com/share/1Az6G75xXL/", icon: "facebook" as const, label: "Facebook" },
   ];
 
   return (

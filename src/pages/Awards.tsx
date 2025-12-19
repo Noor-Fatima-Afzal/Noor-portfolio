@@ -1,37 +1,39 @@
 import Layout from "@/components/Layout";
 import Section from "@/components/Section";
 import AwardItem from "@/components/AwardItem";
+import { describe } from "node:test";
 
 const Awards = () => {
   const awards = [
     {
-      title: "Best Paper Award",
-      organization: "International Conference on Machine Learning",
-      year: "2023",
-      description: "Recognized for outstanding contribution in deep learning research.",
+      title: "Excellence in Neuroscience Research Award",
+      organization: "Al-Khawarizmi Institute of Computer Science (KICS), Lahore, Pakistan",
+      year: "June 2025",
+      description: "Recognized for contributions to signal processing, Neuro-AI pipelines, and innovative neuroscience methods.",
     },
     {
-      title: "Graduate Research Fellowship",
-      organization: "National Science Foundation",
-      year: "2022",
-      description: "Competitive fellowship supporting doctoral research in computer science.",
+      title: "Chief Minister Punjab’s Honhaar Scholarship",
+      organization: "Government of Punjab, Pakistan",
+      year: "May 2025",
+      description: "Awarded for achieving one of the highest CGPAs (top 1%) in Computer Engineering at UET Lahores.",
     },
     {
-      title: "Dean's List",
-      organization: "Georgia State University",
-      year: "2021 - 2023",
+      title: "Top 6 at Optimized AI Conference 2025",
+      organization: "Traversaal.ai",
+      year: "March 2025",
+      description: "Our Team TROJAN AI ranked among the Top 6 out of 200+ global teams, part of OAI 2025 (Atlanta).",
     },
     {
-      title: "Gold Medal",
-      organization: "National University of Computer and Emerging Sciences",
-      year: "2020",
-      description: "Awarded for highest academic achievement in M.S. program.",
+      title: "CS50x Puzzle Day 2025 (9/9 puzzles solved)",
+      organization: "Harvard & MIT (Cambridge)",
+      year: "April 2025",
+      description: "Recognized for outstanding performance in problem-solving, teamwork, and analytical thinking.",
     },
     {
       title: "Merit Scholarship",
-      organization: "University of the Punjab",
-      year: "2014 - 2018",
-      description: "Full tuition scholarship for undergraduate studies.",
+      organization: "Punjab Group of Colleges, Wazirabad Campus, Pakistan",
+      year: "2021 - 2023",
+      description: "Full tuition scholarship for intermediate studies.",
     },
   ];
 

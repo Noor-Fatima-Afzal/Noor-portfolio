@@ -1,7 +1,7 @@
 const CollaborationCallout = () => {
   return (
     <div className="callout-box my-8 font-medium">
-      I am open to collaboration with motivated researchers. Do reach out if interested!!
+      I am open to PhD Research Opportunities at USA!!
     </div>
   );
 };
