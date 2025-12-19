@@ -1,4 +1,4 @@
-import Navigation from "@/components/Navigation";
+import Layout from "@/components/Layout";
 import ProfileHeader from "@/components/ProfileHeader";
 import CollaborationCallout from "@/components/CollaborationCallout";
 import Section from "@/components/Section";
@@ -186,55 +186,45 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <Layout>
+      <ProfileHeader {...profileData} />
+      
+      <CollaborationCallout />
 
-      <main className="max-w-4xl mx-auto px-4 py-8">
-        <ProfileHeader {...profileData} />
-        
-        <CollaborationCallout />
+      <Section title="Education" id="education">
+        {education.map((edu, index) => (
+          <EducationItem key={index} {...edu} />
+        ))}
+      </Section>
 
-        <Section title="Education" id="education">
-          {education.map((edu, index) => (
-            <EducationItem key={index} {...edu} />
-          ))}
-        </Section>
+      <Section title="Research Experience" id="research">
+        {researchExperience.map((exp, index) => (
+          <ExperienceItem key={index} {...exp} />
+        ))}
+      </Section>
 
-        <Section title="Research Experience" id="research">
-          {researchExperience.map((exp, index) => (
-            <ExperienceItem key={index} {...exp} />
-          ))}
-        </Section>
+      <Section title="Awards" id="awards">
+        {awards.map((award, index) => (
+          <AwardItem key={index} {...award} />
+        ))}
+      </Section>
 
-        <Section title="Awards" id="awards">
-          {awards.map((award, index) => (
-            <AwardItem key={index} {...award} />
-          ))}
-        </Section>
+      <Section title="Academic Talks" id="talks">
+        {talks.map((talk, index) => (
+          <TalkItem key={index} {...talk} />
+        ))}
+      </Section>
 
-        <Section title="Academic Talks" id="talks">
-          {talks.map((talk, index) => (
-            <TalkItem key={index} {...talk} />
-          ))}
-        </Section>
+      <Section title="Projects" id="projects">
+        {projects.map((project, index) => (
+          <ProjectItem key={index} {...project} />
+        ))}
+      </Section>
 
-        <Section title="Projects" id="projects">
-          {projects.map((project, index) => (
-            <ProjectItem key={index} {...project} />
-          ))}
-        </Section>
-
-        <Section title="Technical Skills" id="skills">
-          <SkillsSection skillCategories={skills} />
-        </Section>
-      </main>
-
-      <footer className="border-t border-border py-6 text-center text-sm text-muted-foreground">
-        <div className="max-w-4xl mx-auto px-4">
-          © {new Date().getFullYear()} Dr. Alex Chen. All rights reserved.
-        </div>
-      </footer>
-    </div>
+      <Section title="Technical Skills" id="skills">
+        <SkillsSection skillCategories={skills} />
+      </Section>
+    </Layout>
   );
 };
 
