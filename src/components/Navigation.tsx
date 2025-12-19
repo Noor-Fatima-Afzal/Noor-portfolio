@@ -3,8 +3,8 @@ const Navigation = () => {
     { label: "Home", href: "#home" },
     { label: "CV", href: "/cv.pdf" },
     { label: "Google Scholar", href: "https://scholar.google.com", external: true },
-    { label: "Teaching", href: "#teaching" },
-    { label: "Publications", href: "#publications" },
+    { label: "Awards", href: "#awards" },
+    { label: "Projects", href: "#projects" },
   ];
 
   return (
