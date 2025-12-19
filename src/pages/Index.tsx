@@ -5,7 +5,8 @@ import Section from "@/components/Section";
 import EducationItem from "@/components/EducationItem";
 import ExperienceItem from "@/components/ExperienceItem";
 import TalkItem from "@/components/TalkItem";
-import PublicationItem from "@/components/PublicationItem";
+import ProjectItem from "@/components/ProjectItem";
+import AwardItem from "@/components/AwardItem";
 import SkillsSection from "@/components/SkillsSection";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
@@ -78,19 +79,66 @@ const Index = () => {
     },
   ];
 
-  const teaching = [
+  const projects = [
     {
-      institution: "Stanford University",
-      location: "Stanford, CA, USA",
-      period: "Fall 2023",
-      role: "Teaching Assistant - CS229: Machine Learning",
-      links: [{ label: "Slides", url: "#" }],
+      title: "FlashAttention: Fast and Memory-Efficient Attention",
+      description: "Developed a novel IO-aware algorithm for computing exact attention with sub-quadratic memory complexity. This enables training of longer context transformers and reduces GPU memory usage by up to 10x while achieving 2-4x speedup.",
+      techStack: ["PyTorch", "CUDA", "Triton", "C++"],
+      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=200&fit=crop",
+      links: [
+        { label: "Paper", url: "#" },
+        { label: "Code", url: "#" },
+      ],
     },
     {
-      institution: "Stanford University",
-      location: "Stanford, CA, USA",
-      period: "Spring 2023",
-      role: "Teaching Assistant - CS231N: Deep Learning for Computer Vision",
+      title: "Vision Transformer Scaling Study",
+      description: "Conducted comprehensive study on scaling vision transformers to 22 billion parameters. Investigated training stability, emergent capabilities, and transfer learning efficiency at unprecedented scales.",
+      techStack: ["JAX", "TPU", "TensorFlow"],
+      imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop",
+      links: [
+        { label: "Paper", url: "#" },
+        { label: "Demo", url: "#" },
+      ],
+    },
+    {
+      title: "Constitutional AI Framework",
+      description: "Built a framework for training AI systems using principles from human feedback and constitutional constraints. Achieved significant improvements in harmlessness while maintaining helpfulness.",
+      techStack: ["Python", "PyTorch", "Anthropic Claude"],
+      imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=200&fit=crop",
+      links: [
+        { label: "Paper", url: "#" },
+        { label: "ArXiv", url: "#" },
+      ],
+    },
+  ];
+
+  const awards = [
+    {
+      title: "Best Paper Award",
+      organization: "NeurIPS 2023",
+      year: "2023",
+      description: "For contributions to efficient attention mechanisms",
+    },
+    {
+      title: "Google PhD Fellowship",
+      organization: "Google Research",
+      year: "2022",
+      description: "Awarded for outstanding research in machine learning",
+    },
+    {
+      title: "NSF Graduate Research Fellowship",
+      organization: "National Science Foundation",
+      year: "2021",
+    },
+    {
+      title: "Outstanding Graduate Student Award",
+      organization: "MIT EECS Department",
+      year: "2021",
+    },
+    {
+      title: "Valedictorian",
+      organization: "UC Berkeley Computer Science",
+      year: "2019",
     },
   ];
 
@@ -109,43 +157,6 @@ const Index = () => {
       venue: "Google Research Summit, Mountain View",
       title: "Scaling Language Models: Challenges and Opportunities",
       slidesUrl: "#",
-    },
-  ];
-
-  const publications = [
-    {
-      title: "FlashAttention-3: Fast and Memory-Efficient Exact Attention",
-      authors: "A. Chen, T. Dao, D. Fu, S. Ermon, A. Rudra, C. Ré",
-      venue: "NeurIPS",
-      year: "2023",
-      links: [
-        { label: "PDF", url: "#" },
-        { label: "Code", url: "#" },
-      ],
-    },
-    {
-      title: "Scaling Vision Transformers to 22 Billion Parameters",
-      authors: "A. Chen, M. Dehghani, et al.",
-      venue: "ICML",
-      year: "2023",
-      links: [{ label: "PDF", url: "#" }],
-    },
-    {
-      title: "Constitutional AI: Harmlessness from AI Feedback",
-      authors: "A. Chen, Y. Bai, S. Kadavath, et al.",
-      venue: "ICLR",
-      year: "2023",
-      links: [
-        { label: "PDF", url: "#" },
-        { label: "ArXiv", url: "#" },
-      ],
-    },
-    {
-      title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
-      authors: "A. Chen, J. Wei, X. Wang, D. Schuurmans, et al.",
-      venue: "NeurIPS",
-      year: "2022",
-      links: [{ label: "PDF", url: "#" }],
     },
   ];
 
@@ -195,9 +206,9 @@ const Index = () => {
           ))}
         </Section>
 
-        <Section title="Teaching" id="teaching">
-          {teaching.map((item, index) => (
-            <ExperienceItem key={index} {...item} />
+        <Section title="Awards" id="awards">
+          {awards.map((award, index) => (
+            <AwardItem key={index} {...award} />
           ))}
         </Section>
 
@@ -207,9 +218,9 @@ const Index = () => {
           ))}
         </Section>
 
-        <Section title="Selected Publications" id="publications">
-          {publications.map((pub, index) => (
-            <PublicationItem key={index} {...pub} />
+        <Section title="Projects" id="projects">
+          {projects.map((project, index) => (
+            <ProjectItem key={index} {...project} />
           ))}
         </Section>
 
