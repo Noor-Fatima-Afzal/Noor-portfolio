@@ -32,7 +32,7 @@ const Navigation = () => {
                 </a>
               ) : (
                 <Link
-                  to={link.href}
+                  to={link.href} // <-- DO NOT use "#" here
                   className={`nav-link inline-block text-sm font-medium ${
                     location.pathname === link.href ? "bg-primary-foreground/10" : ""
                   }`}
