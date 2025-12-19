@@ -2,19 +2,18 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
-  
-const navLinks = [
-  { label: "Home", href: "#/" },
-  { label: "CV", href: "./Noor-Fatima.pdf", external: true },
-  {
-    label: "Google Scholar",
-    href: "https://scholar.google.com/citations?user=WRKxdKYAAAAJ&hl=en",
-    external: true,
-  },
-  { label: "Awards", href: "#/awards" },
-  { label: "Projects", href: "#/projects" },
-];
 
+  const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "CV", href: "./Noor-Fatima.pdf", external: true },
+    {
+      label: "Google Scholar",
+      href: "https://scholar.google.com/citations?user=WRKxdKYAAAAJ&hl=en",
+      external: true,
+    },
+    { label: "Awards", href: "/awards" },
+    { label: "Projects", href: "/projects" },
+  ];
 
   return (
     <div className="max-w-4xl mx-auto px-4">
