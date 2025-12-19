@@ -5,7 +5,7 @@ const Navigation = () => {
   
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "CV", href: "/Noor-Fatima.pdf", external: true },
+    { label: "CV", href: "./Noor-Fatima.pdf", external: true },
     { label: "Google Scholar", href: "https://scholar.google.com/citations?user=WRKxdKYAAAAJ&hl=en", external: true },
     { label: "Awards", href: "/awards" },
     { label: "Projects", href: "/projects" },
